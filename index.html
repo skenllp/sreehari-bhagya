@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>Sreehari &amp; Bhagya | 25th October 2026</title>
   <meta name="description"
-    content="Together with our families, Sreehari KV and Bhagya Mohandas invite you to their wedding on 25th October 2026 at Palladium Convention Centre, Kanhangad.">
+    content="Together with our families, Sreehari K V and Bhagya Mohandas invite you to their wedding on 25th October 2026 at Palladium Convention Centre, Kanhangad.">
 
   <link rel="canonical" href="https://sreehari-bhagya.vercel.app/">
 
@@ -39,22 +39,34 @@
 
   <style>
     :root {
-      --saffron: #E8650A;
-      --saffron-lt: #F09340;
-      --vermillion: #A81C1C;
-      --vermillion-2: #841212;
-      --vermillion-3: #5C0B0B;
+      /* Blue / Lavender / Teal Theme Tokens */
+      --teal-primary: #125770;
+      --teal-deep: #0D3E50;
+      --teal-mid: #167A94;
+      --teal-soft: #2EA2BD;
+      --blue-royal: #193B68;
+      --blue-deep: #0F2342;
+      --lavender: #7E69AB;
+      --lavender-soft: #B8A7E0;
+      --lavender-light: #ECE7F8;
+      --lavender-deep: #4F3B78;
+
+      /* Semantic mappings */
+      --saffron: #7E69AB;
+      --saffron-lt: #167A94;
+      --vermillion: #125770;
+      --vermillion-2: #193B68;
+      --vermillion-3: #0F2342;
       --gold: #D4AF37;
       --gold-dark: #B88D22;
       --gold-soft: #EADB9F;
-      --cream: #FFF9F0;
-      --cream-mid: #F7EEE0;
-      --cream-deep: #EDE0CE;
-      --ink: #2E1608;
-      --ink-soft: #6E4426;
-      --teal-dark: #11526D;
-      --teal-mid: #186D8C;
-      --divider: rgba(212, 175, 55, 0.45);
+      --cream: #FAF9FD;
+      --cream-mid: #F2EFF9;
+      --cream-deep: #E4DFEE;
+      --ink: #111D2D;
+      --ink-soft: #48556A;
+      --teal-dark: #0F495E;
+      --divider: rgba(184, 167, 224, 0.45);
       --font-script: 'Great Vibes', cursive;
       --font-caps: 'Cinzel', serif;
       --font-serif: 'Cormorant Garamond', Georgia, serif;
@@ -176,8 +188,9 @@
       position: relative;
       overflow: hidden;
       background:
-        radial-gradient(ellipse at 30% 20%, rgba(255, 220, 100, 0.25), transparent 55%),
-        linear-gradient(160deg, #E8650A 0%, #C94A12 35%, #A63518 65%, #C05520 100%);
+        radial-gradient(ellipse at 30% 20%, rgba(184, 167, 224, 0.35), transparent 55%),
+        radial-gradient(circle at 80% 85%, rgba(42, 161, 184, 0.25), transparent 50%),
+        linear-gradient(160deg, #0E2038 0%, #114258 35%, #2D2754 70%, #0D3748 100%);
       transition: transform 1.15s cubic-bezier(.76, 0, .18, 1), opacity 1.15s ease;
       display: flex;
       flex-direction: column;
@@ -188,12 +201,12 @@
       content: '';
       position: absolute;
       inset: 0;
-      background-image: repeating-linear-gradient(45deg, rgba(255, 180, 0, 0.07) 0px, rgba(255, 180, 0, 0.07) 1px, transparent 1px, transparent 18px);
+      background-image: repeating-linear-gradient(45deg, rgba(184, 167, 224, 0.08) 0px, rgba(184, 167, 224, 0.08) 1px, transparent 1px, transparent 18px);
       pointer-events: none;
     }
 
     .fold.left {
-      border-right: 1px solid rgba(255, 200, 80, 0.45);
+      border-right: 1px solid rgba(184, 167, 224, 0.45);
       align-items: flex-end;
     }
 
@@ -231,15 +244,15 @@
       font-size: 26px;
       font-weight: 500;
       letter-spacing: 0.06em;
-      color: #FFF0B0;
+      color: #F8F5FF;
       margin-bottom: 6px;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
     }
 
     .cover-verse {
       font-family: var(--font-serif);
       font-style: italic;
-      color: rgba(255, 240, 176, 0.92);
+      color: rgba(240, 235, 255, 0.92);
       font-size: 13.5px;
       letter-spacing: 0.04em;
       line-height: 1.6;
@@ -254,7 +267,7 @@
       text-transform: uppercase;
       font-style: normal;
       font-size: 10.5px;
-      color: rgba(255, 220, 120, 0.78);
+      color: var(--gold-soft);
     }
 
     .cover-center {
@@ -275,29 +288,30 @@
       width: 104px;
       height: 104px;
       border-radius: 50%;
-      background: radial-gradient(circle at 40% 35%, rgba(255, 240, 180, 0.35), transparent 60%), rgba(255, 180, 0, 0.18);
-      border: 2px solid rgba(255, 220, 80, 0.75);
+      background: radial-gradient(circle at 40% 35%, rgba(210, 195, 255, 0.45), transparent 60%), rgba(16, 75, 96, 0.45);
+      border: 2px solid rgba(210, 195, 255, 0.85);
       display: flex;
       align-items: center;
       justify-content: center;
       animation: pulseRing 2.6s ease-in-out infinite;
+      box-shadow: 0 8px 30px rgba(10, 25, 45, 0.35);
     }
 
     @keyframes pulseRing {
 
       0%,
       100% {
-        box-shadow: 0 0 0 0 rgba(255, 210, 60, 0.35);
+        box-shadow: 0 0 0 0 rgba(184, 167, 224, 0.45);
       }
 
       50% {
-        box-shadow: 0 0 0 16px rgba(255, 210, 60, 0);
+        box-shadow: 0 0 0 16px rgba(42, 161, 184, 0);
       }
     }
 
     .tap-label {
       margin-top: 18px;
-      color: #FFF0B0;
+      color: #EDE8FA;
       letter-spacing: 0.32em;
       text-transform: uppercase;
       font-size: 11px;
@@ -344,9 +358,9 @@
     .cover-name .n {
       font-family: var(--font-script);
       font-size: 46px;
-      color: #FFF0B0;
+      color: #FAF8FF;
       line-height: 1;
-      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
     }
 
     .cover-name .r {
@@ -354,7 +368,7 @@
       letter-spacing: 0.24em;
       text-transform: uppercase;
       font-size: 10px;
-      color: rgba(255, 220, 130, 0.78);
+      color: #B5C4D8;
       margin-top: 6px;
     }
 
@@ -422,7 +436,7 @@
     .hero-amp {
       font-family: var(--font-script);
       font-size: clamp(2.2rem, 5vw, 3.4rem);
-      color: var(--gold-dark);
+      color: var(--lavender);
       margin: -8px 0;
       text-shadow: 0 1px 10px rgba(255, 255, 255, 0.9);
     }
@@ -455,7 +469,7 @@
     }
 
     .hero-date .date-sep {
-      color: var(--gold-dark);
+      color: var(--lavender);
       font-size: 1.2rem;
     }
 
@@ -464,9 +478,9 @@
       align-items: center;
       gap: 8px;
       padding: 12px 28px;
-      border: 1.5px solid var(--gold-dark);
+      border: 1.5px solid var(--teal-mid);
       border-radius: 50px;
-      color: var(--vermillion);
+      color: var(--teal-primary);
       text-decoration: none;
       font-family: var(--font-caps);
       font-size: 0.78rem;
@@ -476,15 +490,15 @@
       transition: all 0.3s ease;
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
-      background: rgba(255, 255, 255, 0.78);
-      box-shadow: 0 4px 16px rgba(168, 28, 28, 0.12);
+      background: rgba(255, 255, 255, 0.85);
+      box-shadow: 0 4px 16px rgba(18, 87, 112, 0.12);
     }
 
     .scroll-btn:hover {
-      background: var(--vermillion);
+      background: var(--teal-primary);
       color: #FFFFFF;
-      border-color: var(--vermillion);
-      box-shadow: 0 8px 24px rgba(168, 28, 28, 0.28);
+      border-color: var(--teal-primary);
+      box-shadow: 0 8px 24px rgba(18, 87, 112, 0.28);
       transform: translateY(-2px);
     }
 
@@ -506,7 +520,10 @@
 
     /* COUNTDOWN */
     .countdown {
-      background: linear-gradient(160deg, var(--vermillion-3), var(--vermillion-2) 55%, var(--vermillion));
+      background:
+        radial-gradient(circle at 20% 30%, rgba(126, 105, 171, 0.25), transparent 45%),
+        radial-gradient(circle at 85% 75%, rgba(22, 122, 148, 0.25), transparent 50%),
+        linear-gradient(160deg, #0D1C30 0%, #12394E 50%, #2A234E 100%);
       text-align: center;
       color: var(--cream-deep);
       position: relative;
@@ -517,15 +534,16 @@
       content: '';
       position: absolute;
       inset: 0;
-      background-image: repeating-linear-gradient(60deg, rgba(255, 200, 60, 0.05) 0px, rgba(255, 200, 60, 0.05) 1px, transparent 1px, transparent 22px);
+      background-image: repeating-linear-gradient(60deg, rgba(184, 167, 224, 0.05) 0px, rgba(184, 167, 224, 0.05) 1px, transparent 1px, transparent 22px);
       pointer-events: none;
     }
 
     .countdown h2 {
       font-size: clamp(30px, 6vw, 50px);
-      color: #FFF0C0;
+      color: #FAF8FF;
       margin: 8px 0 30px;
       font-style: italic;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
     }
 
     .countdown-grid {
@@ -539,10 +557,11 @@
     }
 
     .cbox {
-      border: 1px solid rgba(224, 185, 107, 0.45);
+      border: 1px solid rgba(184, 167, 224, 0.35);
       padding: 26px 8px;
       position: relative;
-      background: rgba(0, 0, 0, 0.12);
+      background: rgba(10, 25, 45, 0.3);
+      backdrop-filter: blur(4px);
     }
 
     .cbox::before,
@@ -551,7 +570,7 @@
       position: absolute;
       width: 9px;
       height: 9px;
-      background: var(--gold-soft);
+      background: var(--lavender-soft);
       transform: rotate(45deg);
       left: 50%;
       margin-left: -4.5px;
@@ -568,7 +587,7 @@
     .cnum {
       font-family: 'Playfair Display', serif;
       font-size: clamp(30px, 6vw, 44px);
-      color: #FFF0C0;
+      color: #FFFFFF;
     }
 
     .clabel {
@@ -576,7 +595,7 @@
       letter-spacing: 0.25em;
       text-transform: uppercase;
       font-size: 10.5px;
-      color: rgba(255, 240, 192, 0.7);
+      color: #C8BFE7;
       margin-top: 6px;
     }
 
@@ -591,7 +610,7 @@
       font-size: 0.8rem;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: var(--gold-dark);
+      color: var(--teal-mid);
       margin-bottom: 8px;
     }
 
@@ -623,22 +642,16 @@
       letter-spacing: 0.25em;
       text-transform: uppercase;
       font-size: 11px;
-      color: var(--gold-dark);
+      color: var(--teal-mid);
       margin-bottom: 10px;
     }
 
     .couple-col .name {
       font-family: 'Playfair Display', serif;
-      font-size: 32px;
-      color: var(--vermillion);
-    }
-
-    .couple-col .full-name {
-      font-family: var(--font-serif);
-      font-style: italic;
-      color: var(--saffron);
-      font-size: 16px;
-      margin-top: 2px;
+      font-size: clamp(28px, 4vw, 34px);
+      color: var(--teal-primary);
+      line-height: 1.25;
+      margin-bottom: 8px;
     }
 
     .couple-col .parents {
@@ -648,28 +661,26 @@
       line-height: 1.65;
     }
 
+    .couple-col .parents .relation {
+      font-style: italic;
+      color: var(--lavender-deep);
+      font-size: 15px;
+      margin-bottom: 3px;
+      display: inline-block;
+    }
+
     .couple-col .parents strong {
       color: var(--ink);
       font-style: normal;
       font-weight: 600;
-    }
-
-    .couple-col .parents em {
-      color: var(--ink-soft);
-      font-style: italic;
-    }
-
-    .couple-col .parents .title {
-      font-size: 13.5px;
-      color: var(--gold-dark);
-      display: block;
-      margin-top: 2px;
+      font-family: inherit;
+      display: inline-block;
     }
 
     .couple-col .address {
       font-style: italic;
       color: var(--ink-soft);
-      margin-top: 8px;
+      margin-top: 10px;
       font-size: 15.5px;
       line-height: 1.55;
     }
@@ -677,7 +688,7 @@
     .amp {
       font-family: var(--font-script);
       font-size: 56px;
-      color: var(--gold);
+      color: var(--lavender);
       align-self: center;
       margin-top: 6px;
     }
@@ -685,21 +696,23 @@
     .presents-blessings {
       font-family: var(--font-serif);
       font-style: italic;
-      color: var(--gold-dark);
+      color: var(--teal-mid);
       font-size: 1.15rem;
       margin-top: 36px;
     }
 
     /* CEREMONY TIME BAND */
     .ceremony-band {
-      background: linear-gradient(135deg, var(--saffron) 0%, #D44A10 50%, var(--saffron-lt) 100%);
+      background:
+        radial-gradient(ellipse at 80% 20%, rgba(184, 167, 224, 0.25), transparent 50%),
+        linear-gradient(135deg, #0F495E 0%, #173B68 50%, #43336E 100%);
       text-align: center;
-      color: #FFF8E8;
+      color: #F7F5FC;
       padding: 52px 8vw;
     }
 
     .ceremony-band h2 {
-      color: #FFF0B0;
+      color: #FAF8FF;
       font-size: clamp(26px, 5vw, 40px);
       font-style: italic;
       margin: 10px 0 18px;
@@ -708,7 +721,7 @@
     .ceremony-time {
       font-family: 'Playfair Display', serif;
       font-size: clamp(32px, 7vw, 56px);
-      color: #FFF8E8;
+      color: #FFFFFF;
       letter-spacing: 0.06em;
       margin: 10px 0 4px;
     }
@@ -717,13 +730,13 @@
       font-family: var(--font-serif);
       font-style: italic;
       font-size: 17px;
-      color: rgba(255, 240, 200, 0.9);
+      color: rgba(235, 228, 255, 0.92);
       letter-spacing: 0.02em;
     }
 
     .ceremony-malayalam {
       font-size: 18px;
-      color: rgba(255, 240, 180, 0.95);
+      color: #E2DAF7;
       margin-top: 12px;
       letter-spacing: 0.02em;
     }
@@ -738,7 +751,7 @@
       font-family: var(--font-script);
       font-size: 56px;
       margin-top: 6px;
-      color: var(--vermillion);
+      color: var(--teal-primary);
     }
 
     .cards {
@@ -750,12 +763,12 @@
     }
 
     .card {
-      background: #FFFCF5;
-      border: 1px solid var(--divider);
+      background: #FFFFFF;
+      border: 1px solid rgba(184, 167, 224, 0.35);
       padding: 38px 34px;
       width: 340px;
       text-align: left;
-      box-shadow: 0 18px 40px -24px rgba(110, 15, 15, 0.25);
+      box-shadow: 0 18px 40px -24px rgba(15, 45, 65, 0.14), 0 4px 12px rgba(142, 124, 195, 0.06);
       position: relative;
     }
 
@@ -763,7 +776,7 @@
     .card::after {
       content: '✿';
       position: absolute;
-      color: rgba(201, 149, 42, 0.3);
+      color: rgba(142, 124, 195, 0.35);
       font-size: 18px;
       pointer-events: none;
     }
@@ -783,38 +796,71 @@
       letter-spacing: 0.25em;
       text-transform: uppercase;
       font-size: 11px;
-      color: var(--gold-dark);
+      color: var(--teal-mid);
     }
 
     .card h3 {
       font-family: var(--font-script);
       font-size: 42px;
       margin: 6px 0 18px;
-      color: var(--vermillion);
+      color: var(--teal-primary);
     }
 
     .card-row {
       display: flex;
-      gap: 12px;
-      margin-bottom: 14px;
+      gap: 16px;
+      margin-bottom: 20px;
       align-items: flex-start;
     }
 
-    .card-row .ic {
-      font-size: 18px;
+    .card-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .ic-badge {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(18, 87, 112, 0.08);
+      border: 1px solid rgba(18, 87, 112, 0.18);
+      color: var(--teal-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
       margin-top: 2px;
+      transition: all 0.25s ease;
+    }
+
+    .card:hover .ic-badge {
+      background: rgba(18, 87, 112, 0.14);
+      border-color: rgba(18, 87, 112, 0.32);
+      transform: scale(1.04);
+    }
+
+    .card-row .sub-label {
+      font-family: var(--font-caps);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--teal-mid);
+      font-weight: 600;
+      margin-bottom: 3px;
     }
 
     .card-row .t1 {
       font-family: 'Playfair Display', serif;
-      font-size: 18px;
+      font-size: 17px;
       color: var(--ink);
+      line-height: 1.35;
     }
 
     .card-row .t2 {
       font-style: italic;
       color: var(--ink-soft);
-      font-size: 15.5px;
+      font-size: 14.5px;
+      margin-top: 2px;
+      line-height: 1.4;
     }
 
     /* VENUE */
@@ -827,23 +873,24 @@
       font-family: var(--font-script);
       font-size: 56px;
       margin-top: 6px;
-      color: var(--vermillion);
+      color: var(--teal-primary);
     }
 
     .venue-card {
       max-width: 640px;
       margin: 44px auto 0;
-      border: 1px solid var(--divider);
+      border: 1px solid rgba(184, 167, 224, 0.35);
       padding: 54px 34px;
-      background: #FFFCF5;
+      background: #FFFFFF;
       position: relative;
+      box-shadow: 0 20px 48px -20px rgba(15, 45, 65, 0.14), 0 4px 16px rgba(142, 124, 195, 0.06);
     }
 
     .venue-card::before,
     .venue-card::after {
       content: '☸';
       position: absolute;
-      color: rgba(201, 149, 42, 0.2);
+      color: rgba(142, 124, 195, 0.25);
       font-size: 36px;
       pointer-events: none;
     }
@@ -863,13 +910,13 @@
       letter-spacing: 0.25em;
       text-transform: uppercase;
       font-size: 11px;
-      color: var(--gold-dark);
+      color: var(--teal-mid);
     }
 
     .venue-name {
       font-family: 'Playfair Display', serif;
       font-style: italic;
-      color: var(--vermillion);
+      color: var(--teal-primary);
       font-size: clamp(26px, 5vw, 40px);
       margin: 12px 0 6px;
     }
@@ -882,48 +929,34 @@
       margin-top: 6px;
     }
 
-    .venue-map {
-      display: block;
-      width: 100%;
-      margin-top: 28px;
-      border: 1px solid var(--divider);
-      border-radius: 2px;
-      overflow: hidden;
-      line-height: 0;
-    }
-
-    .venue-map img {
-      width: 100%;
-      height: auto;
-      display: block;
-      object-fit: cover;
-    }
-
     .venue-btn {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      margin-top: 18px;
+      margin-top: 26px;
       padding: 14px 32px;
-      border: 1px solid var(--gold);
-      color: var(--vermillion);
+      border: 1.5px solid var(--teal-mid);
+      color: var(--teal-primary);
       text-decoration: none;
       letter-spacing: 0.22em;
       text-transform: uppercase;
       font-size: 12px;
       font-family: var(--font-caps);
       transition: all .25s ease;
+      background: #FAF9FD;
+      border-radius: 4px;
     }
 
     .venue-btn:hover {
-      background: var(--vermillion);
+      background: var(--teal-primary);
       color: #fff;
-      border-color: var(--vermillion);
+      border-color: var(--teal-primary);
+      box-shadow: 0 8px 24px rgba(18, 87, 112, 0.25);
     }
 
     /* ═══════════════════ RSVP SECTION (Exact match to Photos 2 & 3) ═══════════════════ */
     .rsvp-section {
-      background: linear-gradient(160deg, #FDF7ED 0%, #FAF0DF 100%);
+      background: linear-gradient(160deg, #F9F7FC 0%, #EFEBF7 100%);
       padding: 80px 20px 100px;
       position: relative;
       text-align: center;
@@ -933,7 +966,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23C9952A' fill-opacity='0.04'%3E%3Cpath d='M40 0 L80 40 L40 80 L0 40 Z'/%3E%3C/g%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%237E69AB' fill-opacity='0.04'%3E%3Cpath d='M40 0 L80 40 L40 80 L0 40 Z'/%3E%3C/g%3E%3C/svg%3E");
       pointer-events: none;
     }
 
@@ -949,11 +982,11 @@
       max-width: 580px;
       margin: 40px auto 0;
       background: #FFFFFF;
-      border: 1.5px solid rgba(212, 175, 55, 0.35);
-      border-radius: 4px;
+      border: 1.5px solid rgba(184, 167, 224, 0.4);
+      border-radius: 6px;
       padding: 46px 40px 50px;
       position: relative;
-      box-shadow: 0 20px 60px rgba(110, 15, 15, 0.08), 0 4px 20px rgba(212, 175, 55, 0.06);
+      box-shadow: 0 20px 60px rgba(15, 40, 65, 0.08), 0 4px 20px rgba(142, 124, 195, 0.08);
       text-align: left;
     }
 
@@ -962,7 +995,7 @@
       position: absolute;
       width: 36px;
       height: 36px;
-      border-color: var(--gold);
+      border-color: var(--lavender-soft);
       border-style: solid;
       pointer-events: none;
     }
@@ -1015,23 +1048,23 @@
     .rsvp-input {
       width: 100%;
       padding: 13px 16px;
-      border: 1.5px solid #E6D8C5;
+      border: 1.5px solid #D8D2E7;
       border-radius: 8px;
       font-family: var(--font-body);
       font-size: 0.95rem;
       color: var(--ink);
-      background: #FCF9F4;
+      background: #FAF9FD;
       transition: border-color 0.25s ease, box-shadow 0.25s ease;
       outline: none;
     }
 
     .rsvp-input::placeholder {
-      color: rgba(110, 68, 38, 0.45);
+      color: rgba(72, 85, 106, 0.5);
     }
 
     .rsvp-input:focus {
       border-color: var(--teal-mid);
-      box-shadow: 0 0 0 3px rgba(24, 109, 140, 0.12);
+      box-shadow: 0 0 0 3px rgba(22, 122, 148, 0.15);
       background: #FFFFFF;
     }
 
@@ -1059,7 +1092,7 @@
       flex: 1;
       padding: 14px 10px;
       border-radius: 8px;
-      border: 1.5px solid #E6D8C5;
+      border: 1.5px solid #D8D2E7;
       font-family: var(--font-caps);
       font-size: 0.72rem;
       letter-spacing: 1.5px;
@@ -1082,21 +1115,21 @@
       background: var(--teal-dark);
       border-color: var(--teal-dark);
       color: #FFFFFF;
-      box-shadow: 0 4px 16px rgba(17, 82, 109, 0.25);
+      box-shadow: 0 4px 16px rgba(15, 73, 94, 0.25);
     }
 
     #attend-no:checked+label {
       background: #FFFFFF;
-      border-color: var(--teal-mid);
-      color: var(--teal-mid);
-      box-shadow: 0 2px 10px rgba(24, 109, 140, 0.15);
+      border-color: var(--lavender);
+      color: var(--lavender-deep);
+      box-shadow: 0 2px 10px rgba(126, 105, 171, 0.15);
     }
 
     /* Submit button */
     .rsvp-submit-btn {
       width: 100%;
       padding: 16px;
-      background: linear-gradient(135deg, #C9952A, #AF7E1E);
+      background: linear-gradient(135deg, #125770 0%, #1E3B68 50%, #5E468A 100%);
       color: #FFFFFF;
       border: none;
       border-radius: 50px;
@@ -1106,15 +1139,15 @@
       text-transform: uppercase;
       font-weight: 600;
       cursor: pointer;
-      box-shadow: 0 6px 24px rgba(201, 149, 42, 0.35);
+      box-shadow: 0 6px 24px rgba(18, 87, 112, 0.35);
       transition: all 0.3s ease;
       margin-top: 8px;
     }
 
     .rsvp-submit-btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 10px 30px rgba(201, 149, 42, 0.5);
-      background: linear-gradient(135deg, #D4AF37, #C9952A);
+      box-shadow: 0 10px 30px rgba(18, 87, 112, 0.45);
+      background: linear-gradient(135deg, #166C8A 0%, #264A7E 50%, #6E53A2 100%);
     }
 
     .rsvp-submit-btn:active {
@@ -1129,14 +1162,14 @@
 
     .rsvp-success__icon {
       font-size: 2.5rem;
-      color: var(--gold);
+      color: var(--lavender);
       margin-bottom: 12px;
     }
 
     .rsvp-success__title {
       font-family: 'Playfair Display', serif;
       font-size: 2rem;
-      color: var(--vermillion);
+      color: var(--teal-primary);
       margin-bottom: 8px;
     }
 
@@ -1207,7 +1240,7 @@
     .photo-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(61, 26, 10, 0.05) 0%, rgba(110, 15, 15, 0.55) 100%);
+      background: linear-gradient(180deg, rgba(14, 28, 48, 0.05) 0%, rgba(14, 28, 48, 0.65) 100%);
       display: flex;
       align-items: flex-end;
       justify-content: center;
@@ -1216,7 +1249,7 @@
     }
 
     .photo-caption {
-      color: #FFF8E8;
+      color: #F8F6FC;
       font-style: italic;
       font-size: 19px;
       letter-spacing: 0.03em;
@@ -1227,12 +1260,15 @@
       font-size: 38px;
       display: block;
       margin-top: 6px;
-      color: #FFF0C0;
+      color: #EDE8FA;
     }
 
     /* CLOSING */
     .closing {
-      background: linear-gradient(170deg, var(--vermillion-3), var(--vermillion-2) 55%, var(--vermillion));
+      background:
+        radial-gradient(circle at 20% 25%, rgba(126, 105, 171, 0.22), transparent 45%),
+        radial-gradient(circle at 80% 75%, rgba(22, 122, 148, 0.25), transparent 50%),
+        linear-gradient(170deg, #0C1A2E 0%, #11364A 50%, #28224C 100%);
       text-align: center;
       color: var(--cream-deep);
       padding-bottom: 120px;
@@ -1244,16 +1280,17 @@
       content: '';
       position: absolute;
       inset: 0;
-      background-image: repeating-linear-gradient(45deg, rgba(255, 200, 60, 0.06) 0px, rgba(255, 200, 60, 0.06) 1px, transparent 1px, transparent 20px);
+      background-image: repeating-linear-gradient(45deg, rgba(184, 167, 224, 0.05) 0px, rgba(184, 167, 224, 0.05) 1px, transparent 1px, transparent 20px);
       pointer-events: none;
     }
 
     .closing .names {
       font-family: var(--font-script);
       font-size: clamp(48px, 10vw, 88px);
-      color: #FFF0C0;
+      color: #FAF8FF;
       margin: 16px 0 10px;
       position: relative;
+      text-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
     }
 
     .closing .date {
@@ -1261,13 +1298,13 @@
       letter-spacing: 0.25em;
       text-transform: uppercase;
       font-size: 13px;
-      color: rgba(255, 240, 192, 0.75);
+      color: rgba(235, 228, 255, 0.85);
       position: relative;
     }
 
     .closing .msg {
       font-style: italic;
-      color: #FFF0C0;
+      color: #EDE8FA;
       margin: 34px 0 6px;
       font-size: 19px;
       position: relative;
@@ -1276,7 +1313,7 @@
     .closing .hashtag {
       font-family: 'Playfair Display', serif;
       font-style: italic;
-      color: var(--gold-soft);
+      color: #B8A7E0;
       font-size: 20px;
       margin-top: 22px;
       position: relative;
@@ -1287,7 +1324,7 @@
       font-family: var(--font-caps);
       letter-spacing: 0.2em;
       font-size: 11px;
-      color: rgba(255, 240, 192, 0.55);
+      color: rgba(220, 212, 245, 0.65);
       text-transform: uppercase;
       position: relative;
     }
@@ -1344,14 +1381,14 @@
       width: 46px;
       height: 46px;
       border-radius: 50%;
-      background: rgba(255, 248, 238, 0.9);
-      border: 1px solid rgba(201, 149, 42, 0.55);
-      color: var(--vermillion);
+      background: rgba(250, 248, 254, 0.92);
+      border: 1px solid rgba(184, 167, 224, 0.5);
+      color: var(--teal-primary);
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      box-shadow: 0 4px 18px -6px rgba(110, 15, 15, 0.35);
+      box-shadow: 0 4px 16px rgba(15, 40, 65, 0.15);
       transition: background .2s ease, transform .15s ease;
       backdrop-filter: blur(6px);
       -webkit-backdrop-filter: blur(6px);
@@ -1359,6 +1396,8 @@
 
     #mute-btn:hover {
       background: rgba(255, 255, 255, 1);
+      border-color: var(--teal-mid);
+      color: var(--teal-mid);
       transform: scale(1.08);
     }
 
@@ -1411,13 +1450,13 @@
       <div class="seal">
         <!-- Ornate Ganesha Emblem in the seal -->
         <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" width="54" height="64" fill="none"
-          stroke="#FFF0B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          stroke="#FAF8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M50 15 L50 30 M42 22 C42 22 50 10 50 10 C50 10 58 22 58 22 M40 28 L60 28 M45 25 L55 25" />
           <path d="M42 35 C30 35 25 50 40 60 C42 61 45 61 47 60" />
           <path d="M58 35 C70 35 75 50 60 60 C58 61 55 61 53 60" />
           <path
             d="M47 42 C47 42 50 38 53 42 C53 42 55 50 51 62 C47 74 46 82 52 86 C58 90 64 88 66 82 C68 76 65 72 61 72" />
-          <path d="M47 46 Q50 52 53 46" fill="#FFF0B0" stroke="none" />
+          <path d="M47 46 Q50 52 53 46" fill="#FAF8FF" stroke="none" />
           <path d="M50 42 L50 48" />
         </svg>
       </div>
@@ -1534,13 +1573,11 @@
         <!-- GROOM -->
         <div class="couple-col">
           <div class="role">The Groom</div>
-          <div class="name">Sreehari</div>
-          <div class="full-name">Sreehari KV</div>
+          <div class="name">Sreehari K V</div>
           <div class="parents">
-            Son of<br>
+            <span class="relation">s/o</span><br>
             <strong>Sri. P. V. Sreedharan</strong><br>
-            <span class="title">(Retired Sales Tax Assistant Commissioner)</span>
-            <em>&amp; Smt. K. V. Bindu</em>
+            <strong>&amp; Smt. K. V. Bindu</strong>
           </div>
           <div class="address">“Ayodhya house”, Mavungal,<br>Kanhangad, Kasaragod</div>
         </div>
@@ -1550,12 +1587,11 @@
         <!-- BRIDE -->
         <div class="couple-col">
           <div class="role">The Bride</div>
-          <div class="name">Bhagya</div>
-          <div class="full-name">Bhagya Mohandas</div>
+          <div class="name">Bhagya Mohandas</div>
           <div class="parents">
-            Daughter of<br>
+            <span class="relation">d/o</span><br>
             <strong>Sri. Mohandas</strong><br>
-            <em>&amp; Smt. Rajasree</em>
+            <strong>&amp; Smt. Rajasree</strong>
           </div>
           <div class="address">Edakkat House, Nellikode,<br>Kovoor, Kozhikode</div>
         </div>
@@ -1566,7 +1602,7 @@
 
     <!-- CEREMONY TIME BAND -->
     <section class="ceremony-band">
-      <div class="eyebrow light" style="color:rgba(255,240,180,0.85);">Muhurtham</div>
+      <div class="eyebrow light" style="color:rgba(235,225,255,0.9);">Muhurtham</div>
       <h2>Sacred Wedding Ceremony</h2>
       <div class="divider light"><span class="line"></span><span class="gem"></span><span class="line"></span></div>
       <div class="ceremony-time">11:30 AM &mdash; 12:00 Noon</div>
@@ -1584,21 +1620,60 @@
         <div class="card">
           <div class="tag">✦ Sacred Ceremony ✦</div>
           <h3>Wedding</h3>
-          <div class="card-row"><span class="ic">📅</span>
+
+          <div class="card-row">
+            <span class="ic-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="3" ry="3"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </span>
             <div>
+              <div class="sub-label">Date</div>
               <div class="t1">Sunday, 25th October 2026</div>
-              <div class="t2">11:30 AM &ndash; 12:00 Noon</div>
             </div>
           </div>
-          <div class="card-row"><span class="ic">🏛️</span>
+
+          <div class="card-row">
+            <span class="ic-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </span>
             <div>
+              <div class="sub-label">Muhurtham</div>
+              <div class="t1">11:30 AM &ndash; 12:00 Noon</div>
+            </div>
+          </div>
+
+          <div class="card-row">
+            <span class="ic-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </span>
+            <div>
+              <div class="sub-label">Venue</div>
               <div class="t1">Palladium Convention Centre</div>
               <div class="t2">Near Govt. HSS, Balla, Kanhangad</div>
             </div>
           </div>
-          <div class="card-row"><span class="ic">🌸</span>
+
+          <div class="card-row">
+            <span class="ic-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3c-1.5 3-4 6.5-7 8.5 3.5.5 6.5 0 7-3.5.5 3.5 3.5 4 7 3.5-3-2-5.5-5.5-7-8.5z"></path>
+                <path d="M5 11.5C3 15 3.5 19 6 21c3-1 5.5-4 6-9-2.5 1-4.5.5-7-.5z"></path>
+                <path d="M19 11.5c2 3.5 1.5 7.5-1 9.5-3-1-5.5-4-6-9 2.5 1 4.5.5 7-.5z"></path>
+              </svg>
+            </span>
             <div>
-              <div class="t1" style="font-size:15px;">കൊല്ലവർഷം 1202 തുലാം 8 ഞായർ</div>
+              <div class="sub-label">Malayalam Date</div>
+              <div class="t1" style="font-size:15.5px;">കൊല്ലവർഷം 1202 തുലാം 8 ഞായർ</div>
             </div>
           </div>
         </div>
@@ -1606,14 +1681,44 @@
         <div class="card">
           <div class="tag">✦ Blessings &amp; Feast ✦</div>
           <h3>Reception</h3>
-          <div class="card-row"><span class="ic">📅</span>
+
+          <div class="card-row">
+            <span class="ic-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="3" ry="3"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </span>
             <div>
+              <div class="sub-label">Date</div>
               <div class="t1">Sunday, 25th October 2026</div>
-              <div class="t2">Following the Wedding Ceremony</div>
             </div>
           </div>
-          <div class="card-row"><span class="ic">📍</span>
+
+          <div class="card-row">
+            <span class="ic-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </span>
             <div>
+              <div class="sub-label">Time</div>
+              <div class="t1">Following the Wedding Ceremony</div>
+            </div>
+          </div>
+
+          <div class="card-row">
+            <span class="ic-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </span>
+            <div>
+              <div class="sub-label">Venue</div>
               <div class="t1">Palladium Convention Centre</div>
               <div class="t2">Chemmattam Vayal, Kanhangad</div>
             </div>
@@ -1635,11 +1740,13 @@
           Near Government Higher Secondary School, Balla<br>
           Chemmattam Vayal, Kanhangad
         </div>
-        <a class="venue-map" href="https://maps.app.goo.gl/hE4P4uoj3hLRdmAM8?g_st=ac" target="_blank" rel="noopener">
-          <img src="map.png" alt="Map to Palladium Convention Centre, Kanhangad">
+        <a class="venue-btn" href="https://maps.app.goo.gl/hE4P4uoj3hLRdmAM8?g_st=ac" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span>Open Google Maps</span>
         </a>
-        <a class="venue-btn" href="https://maps.app.goo.gl/hE4P4uoj3hLRdmAM8?g_st=ac" target="_blank" rel="noopener">📍
-          Open Google Maps</a>
       </div>
     </section>
 
@@ -1652,7 +1759,7 @@
       <div class="divider-ornament">
         <span></span>
         <svg viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 2 L36 10 L20 18 L4 10 Z" stroke="#D4AF37" stroke-width="1.2" fill="none" />
+          <path d="M20 2 L36 10 L20 18 L4 10 Z" stroke="var(--teal-mid)" stroke-width="1.2" fill="none" />
         </svg>
         <span></span>
       </div>
@@ -1738,7 +1845,7 @@
     <!-- CLOSING -->
     <section class="closing">
       <!-- Ganesha motif -->
-      <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" width="56" height="68" fill="none" stroke="#FFF0B0"
+      <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" width="56" height="68" fill="none" stroke="#FAF8FF"
         stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
         style="margin-bottom:12px;position:relative;opacity:0.95;">
         <path d="M50 15 L50 30 M42 22 C42 22 50 10 50 10 C50 10 58 22 58 22 M40 28 L60 28 M45 25 L55 25" />
@@ -1746,14 +1853,14 @@
         <path d="M58 35 C70 35 75 50 60 60 C58 61 55 61 53 60" />
         <path
           d="M47 42 C47 42 50 38 53 42 C53 42 55 50 51 62 C47 74 46 82 52 86 C58 90 64 88 66 82 C68 76 65 72 61 72" />
-        <path d="M47 46 Q50 52 53 46" fill="#FFF0B0" stroke="none" />
+        <path d="M47 46 Q50 52 53 46" fill="#FAF8FF" stroke="none" />
         <path d="M50 42 L50 48" />
       </svg>
       <div class="names">Sreehari &amp; Bhagya</div>
       <div class="date">25 October 2026</div>
       <p class="msg">With Love &amp; Blessings,<br>we look forward to celebrating with you.</p>
       <div class="hashtag">#Sreehari&amp;Bhagya</div>
-      <div class="foot">Sreehari KV &amp; Bhagya Mohandas &middot; 25 October 2026</div>
+      <div class="foot">Sreehari K V &amp; Bhagya Mohandas &middot; 25 October 2026</div>
     </section>
 
   </main>
